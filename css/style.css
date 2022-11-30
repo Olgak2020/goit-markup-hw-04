@@ -74,7 +74,7 @@ img {
     padding-right:15px;
     padding-left:15px ;
     margin: 0 auto;
-    /* outline: 2px solid tomato; */
+    
 
    }
 
@@ -178,7 +178,6 @@ color:var(--title-color);
 
     /* -------------------Address--------------- */
 .header-icon{
-    fill: #AFB1B8;
     margin-right: 10px; 
     fill: currentColor;
 }
@@ -289,7 +288,7 @@ color:var(--title-color);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px; 
-    padding-top:32px ;
+    
     
  }
 
@@ -318,43 +317,9 @@ color:var(--title-color);
      justify-content: center; 
      align-items: center;
     background-color:var(--bg-color);
+    margin-bottom:32px ;
  }  
-/* 
- .feature > .item::before{
-    content:'';
-    display:block ;
-    height: 128.71px;
-    background-repeat: no-repeat;
-    background-size:  70px contain;
-    background-position: center;
-    background-color:var(--bg-color); */
-
- /* }   */
-
-/* .icon-antena::before{
-    background-image:url('../images/icon/astronaut-icon.svg');
-
- } 
- .icon-clock::before{
-    background-image: url('../images/icon/clock-icon.svg ');
- }
-
- .icon-diagram::before{
-    background-image:url('../images/icon/diagram-icon.svg') ;
- }
-
- .icon-astronaut::before{
-    background-image:url('../images/icon/astronaut-icon.svg') ;
- } */
-
-
-
- /* .feature > .item:nth-child(1)::before{
-    background-image:url('../images/antenna\ 1\ \(1\).svg')
- }
-   */
-
-
+    
 
 /* ---------------Section-business---------------*/
 
@@ -432,7 +397,7 @@ color:var(--title-color);
   
 }
 .social-item-link:hover .social-item-icon{
-    fill:#FFFFFF;
+    fill:var(--title-hero-color);
 } 
 
  .section-team{
@@ -511,9 +476,7 @@ letter-spacing: 3%;
 }
 .client-icon{
    flex-basis:calc(100% /6); 
-   padding: 16px 32px; 
-   outline: 1px solid #AFB1B8;
-   border-radius: 4px;
+   
 }
 .client-icon:not(:last-child){
     margin-right:30px; 
@@ -521,12 +484,20 @@ letter-spacing: 3%;
 
 .client-logo{
   display: flex;
+  justify-content: center;
+  align-items: center;
   fill:#AFB1B8;
+  width: 170px;
+  height:92px ;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px ; 
 
   }   
 
-.client-icon:hover{
-    fill:var(--accent-color) ;
+.client-logo:hover,
+.client-logo:focus{
+     fill:var(--accent-color);
+   border-color: var(--accent-color);  
 }
 
 /* ---------------Footer--------------- */
@@ -539,20 +510,19 @@ letter-spacing: 3%;
  background-color: var(--accent-color);   
 }
 
-.footer-title {
+.container-social .social-item-icon{
+    fill: var(--bg-color);
+}
+.footer-text {
+    margin-bottom: 20px;
     
-  color:var(--title-hero-color) ;
- 
+    color:var(--title-hero-color);
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.74;
     letter-spacing: 0.03em;
-}
-
-
-.container-social .action-social{
-    margin-top: 20px;
 }
 
 .footer .container{
@@ -581,8 +551,8 @@ align-items: flex-end ;
     color: var(--accent-color);
  }
  .footer-info{
-    color: rgba(255, 255, 255, 0.6) ;
- }  
+    color: var(--bg-color);} 
+  
 .footer-nav{
     display: flex;
     flex-direction: column;
@@ -653,7 +623,7 @@ border-radius: 4px;
 }
 
 .project-list .item:hover{
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 
